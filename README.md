@@ -37,4 +37,4 @@
 
 </details>
 
-<div style="text-align: right"> (<a href="#top">Volver Arriba</a>) </div>
+<p align="right">([Volver Arriba](#top)</a>)</p>
