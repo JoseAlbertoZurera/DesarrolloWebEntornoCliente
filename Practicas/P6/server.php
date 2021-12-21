@@ -6,4 +6,6 @@ $genero = $_POST['genero'];
 $fechaNacimiento = $_POST['fechaNacimiento'];
 $email = $_POST['email'];
 $password = $_POST['password'];
+
+header("Location:index.html");
 ?>
