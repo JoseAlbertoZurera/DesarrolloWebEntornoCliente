@@ -27,16 +27,9 @@
 </details>
 
 <details>
-<summary>Unidad 4</summary>
+<summary>Unidad 8</summary>
 
-* ***Sin contenido***
-
-</details>
-
-<details>
-<summary>Unidad 5</summary>
-
-* ***Sin contenido***
+* [Práctica 6 - Interacción Con El Usuario](https://github.com/JoseAlbertoZurera/DesarrolloWebEntornoCliente/blob/master/Practicas/P6)
 
 </details>
 

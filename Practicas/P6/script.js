@@ -1,5 +1,5 @@
 /**
- * Funcion que recibe los valores del formulario, los almacena en una variable y los muestra en forma de alerta
+ * Funcion que recibe los valores del formulario, los almacena en variables y los muestra en forma de alerta
  *  */ 
 function validacionFormulario() {
   let nombre = document.formulario.nombre.value;
