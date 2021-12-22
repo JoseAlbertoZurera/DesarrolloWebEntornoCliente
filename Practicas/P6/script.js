@@ -1,30 +1,52 @@
+/**
+ * Funcion que recibe los valores del formulario, los almacena en una variable y los muestra en forma de alerta
+ *  */ 
 function validacionFormulario() {
-  let nombre = document.getElementById("name").value;
-  let apellido1 = document.getElementById("apellido1").value;
-  let apellido2 = document.getElementById("apellido2").value;
-  let genero = document.getElementById("genero").value;
-  let fechaNacimiento = document.getElementById("fechaNacimiento").value;
-  let email = document.getElementById("email").value;
-  let password = document.getElementById("password").value;
-  alert(nombre);
+  let nombre = document.formulario.nombre.value;
+  let apellido1 = document.formulario.apellido1.value;
+  let apellido2 = document.formulario.apellido2.value;
+  let fechaNacimiento = document.formulario.fechaNacimiento.value;
+  let genero = document.formulario.genero.value;
+  let email = document.formulario.email.value;
+  let password = document.formulario.password.value;
+
+  alert(
+    "Nombre: " +
+      nombre +
+      "\n" +
+      "Apellido 1: " +
+      apellido1 +
+      "\n" +
+      "Apellido 2: " +
+      apellido2 +
+      "\n" +
+      "Fecha de nacimiento: " +
+      fechaNacimiento +
+      "\n" +
+      "Genero: " +
+      genero +
+      "\n" +
+      "Email: " +
+      email +
+      "\n" +
+      "Contraseña: " +
+      password
+  );
 }
 
+/**
+ * Función que recoge la hora local y devuelve la fecha actual en formato "yyyy-mm-dd"
+ * @returns fecha
+ */
 function obtenerFechaActual() {
-  var today = new Date();
-  var dd = today.getDate();
-  var mm = today.getMonth() + 1; //January is 0!
-  var yyyy = today.getFullYear();
+  var fecha = new Date();
+  var dd = fecha.getDate(); // El valor devuelto es un número entero, entre 1 y 31, representa el día del mes para la fecha dada según la hora local.
+  var mm = fecha.getMonth() + 1; // Devuelve el mes actual, donde el número 0 indica el primer mes del año según la hora local.
+  var yyyy = fecha.getFullYear(); // Devuelve el año de la fecha indicada acorde a la hora local
 
-  if (dd < 10) {
-    dd = "0" + dd;
-  }
-
-  if (mm < 10) {
-    mm = "0" + mm;
-  }
-
-  today = yyyy + "-" + mm + "-" + dd;
-  return today;
+  fecha = yyyy + "-" + mm + "-" + dd;
+  return fecha;
 }
 
+// LLamamos a la función "obtenerFechaActual()" para obtener la fecha actual y la añadimos como valor máximo al formulario
 document.getElementById("fechaNacimiento").max = obtenerFechaActual();
