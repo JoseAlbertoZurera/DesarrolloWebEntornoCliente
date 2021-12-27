@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <title>Práctica 7 - Eventos, Expresiones Y Cookies</title>
+  </head>
+  <body>
+    <div class="container">
+      <form action="server.php" method="post" name="formulario">
+        <div class="row">
+          <div class="col-12">
+            <label class="col-form-label" for="usuario">Nombre de Usuario:</label>
+            <input
+              class="form-control"
+              type="text"
+              id="usuario"
+              name="usuario"
+              placeholder="Nombre de usuario"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12">
+            <label class="col-form-label" for="password">Contraseña:</label>
+            <input
+              class="form-control"
+              type="password"
+              name="password"
+              placeholder="Contraseña"
+              required
+            />
+          </div>
+        </div>
+
+        <p>He olvidado la contraseña</p>
+
+        <button type="submit" class="btn btn-success">Iniciar Sesión</button>
+      </form>
+    </div>
+  </body>
+</html>
