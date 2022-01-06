@@ -44,6 +44,14 @@ function obtenerFechaActual() {
   var mm = fecha.getMonth() + 1; // Devuelve el mes actual, donde el número 0 indica el primer mes del año según la hora local.
   var yyyy = fecha.getFullYear(); // Devuelve el año de la fecha indicada acorde a la hora local
 
+  if (dd < 10) {
+    dd = '0' + dd; //Añadimos un "0" delante del día en el caso donde el valor sea menor de 10
+  }
+  
+  if (mm < 10) {
+    mm = '0' + mm; //Añadimos un "0" delante del mes en el caso donde el valor sea menor de 10
+  }
+
   fecha = yyyy + "-" + mm + "-" + dd;
   return fecha;
 }
