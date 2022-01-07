@@ -10,6 +10,7 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <title>Práctica 7 - Eventos, Expresiones Y Cookies</title>
   </head>
   <body>
@@ -35,6 +36,7 @@
             <input
               class="form-control"
               type="password"
+              id="password"
               name="password"
               placeholder="Contraseña"
               required
@@ -42,10 +44,12 @@
           </div>
         </div>
 
-        <p>He olvidado la contraseña</p>
+        <a href="#" id="olvidarContraseña" style="color: #1A73E8;">He olvidado la contraseña</a>
+        <p id="avisoMayus" style="visibility: hidden;">Bloq Mayús activado</p>
 
         <button type="submit" class="btn btn-success">Iniciar Sesión</button>
       </form>
     </div>
+    <script type="text/javascript" src="script.js"></script>
   </body>
 </html>
