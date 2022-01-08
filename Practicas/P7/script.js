@@ -26,7 +26,7 @@ password.addEventListener("keydown", function (event) {
 
 /**
  * El evento "onBlur" se ejecuta cuando un elemento pierde el foco	
- * Cuando el usuario sale del campo contraseña se oculta el mensaje sin importar que la tecla esté activada
+ * Cuando el usuario sale del campo contraseña se oculta el mensaje sin importar que la tecla "BloqMayus" esté activada
  */
 password.addEventListener("blur", function () {
   document.getElementById("avisoMayus").style.visibility = "hidden"; // Ocultamos el mensaje
@@ -39,17 +39,17 @@ password.addEventListener("blur", function () {
 
 /**
  * El evento "onClick" se ejecuta cuando el usuario hace clic en el elemento indicado
- * Cuando el usuario hace un click en el mensaje de olvidar contraseña, se ejecuta una alerta con un delai de 350 milisegundos,
+ * Cuando el usuario hace un click en el mensaje de olvidar contraseña, se ejecuta una alerta con un delai de 500 milisegundos,
    este delai se añade para porder ajecutar el evento "dblclick" en el caso de que el usuario lo active
  */
 olvidarContraseña.addEventListener("click", function () {
   setTimeout(function () {
     alertaPermisos();
-  }, 350);
+  }, 500);
 });
 
 /**
- * El evento "onClick" se ejecuta cuando el usuario hace doble clic en el elemento indicado
+ * El evento "onDbClick" se ejecuta cuando el usuario hace doble clic en el elemento indicado
  * Cuando el usuario hace doble click en el mensaje de olvidar contraseña, se redirige a una pagina web externa
  */
 olvidarContraseña.addEventListener("dblclick", function () {
@@ -63,6 +63,6 @@ function alertaPermisos() {
   Swal.fire({
     icon: "error",
     title: "Lo Sentimos",
-    text: "No tienes permisos de superusuario para reestablecerla",
+    text: "No tienes permisos de superusuario para reestablecer la contraseña",
   });
-}
+}  
