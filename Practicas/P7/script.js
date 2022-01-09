@@ -60,7 +60,7 @@ olvidarContraseña.addEventListener("dblclick", function () {
 
 
 /**
- * Función que ejecuta una alerta informando de que el usuario no tiene perimisos de superusuario para reestablecer la contraseña
+ * Función que ejecuta una alerta informando de que el usuario no tiene permisos de superusuario para reestablecer la contraseña
  */
 function alertaPermisos() {
   Swal.fire({
