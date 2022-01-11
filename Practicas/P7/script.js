@@ -88,19 +88,8 @@ window.addEventListener("load", function () {
 /**
  * El evento "onResize" se ejecuta cuando el tamaño de la ventana se modifica
  * Cuando el usuario agranda o minimiza se muestra en tiempo real las dimensiones de la ventana del navegador
- * Dependiendo de las dimensiones de que tome la ventana, se ajusta la altura del contedor principal
  */
 window.addEventListener("resize", function () {
   width.innerHTML = window.innerWidth + "px x"; // La propiedad innerWidth devuelve el ancho interior del área de contenido de una ventana
   height.innerHTML = window.innerHeight + "px"; // La propiedad innerHeight devuelve la altura interna del área de contenido de una ventana
-  document.getElementById("contenedor").style.height = window.innerHeight - 25 + "px"; // Altura al contenedor principal
 });
-
-
-//-------------------------------------------------------------------------------------------------------------------------------------
-
-
-/* Establecemos la altura al contenedor principal para poder centrar el contenido del contenedor al centro de la página, 
-éste lo centramos con el tamaño que tiene el área de contenido de la ventana, le restamos los 25px porque arriba a la 
-izquierda de la página tenemos un elemento de tipo párrafo que ocupa 25px que está fuera del contenedor principal*/
-document.getElementById("contenedor").style.height = window.innerHeight - 25 + "px";
