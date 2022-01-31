@@ -3,7 +3,23 @@ body {
   background-color: black;
 }
 
-.contenedorPrincipal {
+p {
+  color: #d1a328;
+}
+
+button {
+  background: transparent;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  font-size: 17px;
+  margin: 4px 2px;
+  cursor: pointer;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+#contenedorPrincipal {
   display: none;
 }
 
@@ -75,10 +91,6 @@ body {
   }
 }
 
-p {
-  color: #d1a328;
-}
-
 /* Set the font, lean the board, position it */
 #board {
   font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
@@ -107,13 +119,12 @@ p {
 
 /* Set the scrolling animation and position it */
 #contenido {
-  animation: scroll 100s linear 15s;
+  animation: scroll 90s linear 15s;
   position: absolute;
   top: 120%;
 }
 
-#titulo,
-#subtitulo {
+#titulo, #subtitulo {
   text-align: center;
 }
 
@@ -124,18 +135,4 @@ p {
   100% {
     top: -90%;
   }
-}
-
-button {
-  background: transparent;
-  border: none;
-  color: white;
-  padding: 16px 32px;
-  text-align: center;
-  display: inline-block;
-  font-size: 17px;
-  margin: 4px 2px;
-  cursor: pointer;
-  text-decoration: none;
-  text-transform: uppercase;
 }
