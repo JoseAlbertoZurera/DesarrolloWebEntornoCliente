@@ -30,7 +30,6 @@ button {
   background-color: white;
 }
 
-/* Set the animation, color, size and hide the text */
 .intro {
   position: absolute;
   top: 30%;
@@ -58,7 +57,6 @@ button {
   }
 }
 
-/* Set the animation & hide the logo */
 .logo {
   position: absolute;
   top: 20%;
@@ -73,7 +71,6 @@ button {
   width: inherit;
 }
 
-/* Scale the logo down and maintain it centered */
 @keyframes logo {
   0% {
     width: 18em;
@@ -91,7 +88,6 @@ button {
   }
 }
 
-/* Set the font, lean the board, position it */
 #board {
   font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
   transform: perspective(350px) rotateX(25deg);
@@ -117,7 +113,6 @@ button {
   top: 0;
 }
 
-/* Set the scrolling animation and position it */
 #contenido {
   animation: scroll 90s linear 15s;
   position: absolute;
