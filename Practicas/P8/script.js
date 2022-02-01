@@ -23,18 +23,28 @@ function getRandomPosition() {
 }
 
 /**
- * Función que recibe un número de estrellas y las muestra en el body
- * @param {*} numEstrellas 
+ * Función que recibe un número de estrellas y las muestra como fondo en el body
+ * @param {*} numEstrellas
  */
 function crearEstrellas(numEstrellas) {
+  $("div").remove(".estrellas");
   for (let i = 0; i < numEstrellas; i++) {
-    let estrellas = document.createElement("div");
-    estrellas.className = "estrellas";
     let xy = getRandomPosition();
-    estrellas.style.top = xy[0] + "px";
-    estrellas.style.left = xy[1] + "px";
-    document.body.append(estrellas);
+    $('body').append('<div class="estrellas" style="top: ' + xy[0] + 'px; left: ' + xy[1] + 'px";></div>');
   }
 }
 
-crearEstrellas(numEstrellas);
+
+/**
+ * Cuando la página carga completamente se crean las estrellas
+ */
+ window.addEventListener('load', function(){
+  crearEstrellas(numEstrellas);
+});
+
+/**
+ * Si se modifica el tamaño de la ventana se borran las estrellas y se crean nuevas
+ */
+window.addEventListener('resize', function(){
+  crearEstrellas(numEstrellas);
+});
