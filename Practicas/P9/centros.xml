@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<centros>
+    <centro>
+        <nombre>MEDAC Arena</nombre>
+        <direccion>C. Escritora Maria Goyri, 14005 Córdoba</direccion>
+        <coordenadas>
+            <latitud>37.8802566</latitud>
+            <longitud>-4.8062834</longitud>
+        </coordenadas>
+    </centro>
+
+    <centro>
+        <nombre>MEDAC Córdoba</nombre>
+        <direccion>C. Escritora Ángeles López de Ayala, 7, 14005 Córdoba</direccion>
+        <coordenadas>
+            <latitud>37.8745741</latitud>
+            <longitud>-4.8026242</longitud>
+        </coordenadas>
+    </centro>
+</centros>
