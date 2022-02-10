@@ -1,16 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link href="style.css" rel="stylesheet" type="text/css">
     <title>Práctica 9 - Desarrollo Asíncrono</title>
   </head>
-  <body style="background-color: aliceblue">
+
+  <body>
     <div class="container">
-      <div class="row">
+
+      <div id="filaTitulo" class="row">
+        <div class="col-12 d-flex justify-content-center align-items-center">
+          <h1>Centros Medac en Córdoba</h1>
+        </div>
+      </div>
+
+      <div id="filaTablaCentros" class="row">
         <div class="col-12">
           <table class="table table-striped">
             <thead>
@@ -19,26 +29,38 @@
               <th scope="col">Latitud</th>
               <th scope="col">Longitud</th>
             </thead>
-            <tbody id="centros" style="cursor: pointer">
-              <!-- Aquí insertamos los datos con JavaScript -->
+            <tbody id="centros">
+              <!-- Aquí insertamos los centros con JavaScript -->
             </tbody>
           </table>
+        </div>
+      </div>
 
-          <table id="tablaRestaurantes" class="table table-striped" style="display: none">
-            <thead>
-              <th scope="col">Nombre</th>
-              <th scope="col">Dirección</th>
-              <th scope="col">Latitud</th>
-              <th scope="col">Longitud</th>
-              <th scope="col">Puntuación</th>
-            </thead>
-            <tbody id="restaurantes">
-              <!-- Aquí insertamos los datos con JavaScript -->
-            </tbody>
-          </table>
-
-          <div id="map" class="rounded" style="height: 500px; width: 97%">
-            <!-- Aquí insertamos el mapa -->
+        <div id="filaContenidoRestaurantes" class="row border border-3">
+          <div class="col-6">
+            <div id="filaTituloRestaurante" class="col-12">
+              <h2>Restaurantes cercanos</h2>
+            </div>
+            <table id="tablaRestaurantes" class="table table-striped">
+              <thead>
+                <th scope="col">Nombre</th>
+                <th scope="col">Dirección</th>
+                <th scope="col">Latitud</th>
+                <th scope="col">Longitud</th>
+                <th scope="col">Puntuación</th>
+              </thead>
+              <tbody id="restaurantes">
+                <!-- Aquí insertamos los restaurantes con JavaScript -->
+              </tbody>
+            </table>
+          </div>
+          <div class="col-6">
+            <div id="filaTituloMapa" class="col-12">
+              <h2>Mapa Google</h2>
+            </div>
+            <div id="map" class="rounded rounded-3">
+              <!-- Aquí insertamos el mapa -->
+            </div>
           </div>
         </div>
       </div>

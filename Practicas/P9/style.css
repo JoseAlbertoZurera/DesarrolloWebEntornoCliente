@@ -1,0 +1,40 @@
+body {
+  background-color: aliceblue;
+  font-family: "Courier New", Courier, monospace;
+}
+
+h1, h2 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: rgb(5, 25, 80);
+  text-align: center;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+#map {
+  height: 370px;
+  width: 97%;
+}
+
+#centros tr:hover {
+  background-color: #cfd8e2;
+  cursor: pointer;
+}
+
+#filaContenidoRestaurantes {
+    visibility: hidden;
+}
+
+#filaTitulo {
+    height: 110px;
+}
+
+#filaTablaCentros {
+    margin-bottom:  30px;
+}
+
+#filaContenidoRestaurantes #filaTituloRestaurante, #filaTituloMapa {
+    padding: 15px;
+}
