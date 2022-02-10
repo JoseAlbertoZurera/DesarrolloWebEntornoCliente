@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<restaurantes>
+
+    <arena>
+        <nombre>Macdonal's open arena</nombre>
+        <direccion>Periodista Quesada Chacón, 225, 14005 Córdoba</direccion>
+        <coordenadas>
+            <latitud>37.8750294</latitud>
+            <longitud>-4.8040947</longitud>
+        </coordenadas>
+        <puntuacion>4,1</puntuacion>
+    </arena>
+
+    <arena>
+        <nombre>Celia Jiménez</nombre>
+        <direccion>Complejo deportivo Open Arena, Periodista Quesada Chacón, 225, 14005 Córdoba</direccion>
+        <coordenadas>
+            <latitud>37.87412649</latitud>
+            <longitud>-4.81053769</longitud>
+        </coordenadas>
+        <puntuacion>4,1</puntuacion>
+    </arena>
+
+    <arena>
+        <nombre>Restaurante Las Delicias</nombre>
+        <direccion>Cañada Real Mestas, 37, 14005 Córdoba</direccion>
+        <coordenadas>
+            <latitud>37.883427</latitud>
+            <longitud>-4.8064747</longitud>
+        </coordenadas>
+        <puntuacion>4,2</puntuacion>
+    </arena>
+
+
+
+
+    <cordoba>
+        <nombre>Pizzeria Il Piccantino</nombre>
+        <direccion>Urb. Parque de las Avenidas, 2, 14004 Córdoba</direccion>
+        <coordenadas>
+            <latitud>37.87493</latitud>
+            <longitud>-4.8002087</longitud>
+        </coordenadas>
+        <puntuacion>4,5</puntuacion>
+    </cordoba>
+
+    <cordoba>
+        <nombre>EL AURA</nombre>
+        <direccion>Av. del Aeropuerto, 50, 14004 Córdoba</direccion>
+        <coordenadas>
+            <latitud>37.8726467</latitud>
+            <longitud>-4.8019841</longitud>
+        </coordenadas>
+        <puntuacion>4,2</puntuacion>
+    </cordoba>
+
+    <cordoba>
+        <nombre>Asador 2POLLOS</nombre>
+        <direccion>C. Escritora Cecilia Bohl de Faber, s/n, 14005 Córdoba</direccion>
+        <coordenadas>
+            <latitud>37.8735765</latitud>
+            <longitud>-4.8033542</longitud>
+        </coordenadas>
+        <puntuacion>4,4</puntuacion>
+    </cordoba>
+</restaurantes>
